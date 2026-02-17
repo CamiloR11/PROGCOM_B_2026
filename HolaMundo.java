@@ -27,5 +27,8 @@ public class Holamundo {
         }   
     
     }
-    
+        //IF TERNARIO
+    String aguacero = ((lluvia.equals("si")) ? "Use sombrilla y guarde la ropa":"Salga tranquilo" );
+    System.out.println(aguacero);
 }
+
