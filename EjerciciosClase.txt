@@ -1,0 +1,144 @@
+Ejercicio 1
+package ejercicios.clase;
+
+import java.util.*;
+/**
+ *
+ * @author Camilo Rodriguez
+ */
+public class EjerciciosClase {
+public static void main(String[] args) {
+
+Scanner play = new Scanner(System.in);
+
+int base;
+int altura;
+int area;
+
+System.out.println("Digite la base:");
+base = play.nextInt();
+
+System.out.println("Digite la altura:");
+altura = play.nextInt();
+
+area = (base * altura) / 2;
+
+System.out.println("El area es: " + area);
+}
+}
+
+
+Ejercicio 2
+package ejercicios.clase;
+
+import java.util.*;
+
+public class EjerciciosClase {
+public static void main(String[] args) {
+
+Scanner play = new Scanner(System.in);
+
+int c;
+int f;
+
+System.out.println("Digite grados Celsius:");
+c = play.nextInt();
+
+f = (c * 9/5) + 32;
+
+System.out.println("Fahrenheit: " + f);
+}
+}
+
+
+Ejercicio 3
+package ejercicios.clase;
+
+import java.util.*;
+
+public class EjerciciosClase {
+public static void main(String[] args) {
+
+Scanner play = new Scanner(System.in);
+
+int n1;
+int n2;
+int n3;
+int prom;
+
+System.out.println("Numero 1:");
+n1 = play.nextInt();
+
+System.out.println("Numero 2:");
+n2 = play.nextInt();
+
+System.out.println("Numero 3:");
+n3 = play.nextInt();
+
+prom = (n1 + n2 + n3) / 3;
+
+System.out.println("El promedio es: " + prom);
+}
+}
+
+Ejercicio 4
+package ejercicios.clase;
+
+import java.util.*;
+
+public class EjerciciosClase {
+public static void main(String[] args) {
+
+Scanner play = new Scanner(System.in);
+
+double radio;
+double area;
+double perimetro;
+double pi = 3.14; 
+
+System.out.println("Digite el radio:");
+radio = play.nextInt();
+
+area = pi * radio * radio;
+perimetro = 2 * pi * radio;
+
+System.out.println("Area: " + area);
+System.out.println("Perimetro: " + perimetro);
+}
+}
+
+Ejercicio 5
+package ejercicios.clase;
+
+import java.util.*;
+
+public class EjerciciosClase {
+public static void main(String[] args) {
+
+Scanner play = new Scanner(System.in);
+
+int a;
+int b;
+int c;
+int d;
+int x1;
+int x2;
+
+System.out.println("Digite a:");
+a = play.nextInt();
+
+System.out.println("Digite b:");
+b = play.nextInt();
+
+System.out.println("Digite c:");
+c = play.nextInt();
+
+d = (b*b) - (4*a*c);
+
+x1 = (-b + (int)Math.sqrt(d)) / (2*a);
+x2 = (-b - (int)Math.sqrt(d)) / (2*a);
+
+System.out.println("x1 = " + x1);
+System.out.println("x2 = " + x2);
+}
+}
