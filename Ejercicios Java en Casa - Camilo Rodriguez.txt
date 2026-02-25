@@ -1,0 +1,260 @@
+Camilo Rodriguez
+U00181176
+
+EJERCICIOS DEL 5 AL 15
+5. Cuadratica
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese el valor de a: ");
+        double a = sc.nextDouble();
+
+        System.out.print("Ingrese el valor de b: ");
+        double b = sc.nextDouble();
+
+        System.out.print("Ingrese el valor de c: ");
+        double c = sc.nextDouble();
+
+        double d = b * b - 4 * a * c;
+
+        if (d > 0) {
+            System.out.println("La ecuación tiene dos soluciones reales");
+        } else if (d == 0) {
+            System.out.println("La ecuación tiene una solución real");
+        } else {
+            System.out.println("La ecuación no tiene soluciones reales");
+        }
+    }
+}
+
+6. Par o Impar
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese un número entero: ");
+        int n = sc.nextInt();
+
+        if (n % 2 == 0) {
+            System.out.println("El número es par");
+        } else {
+            System.out.println("El número es impar");
+        }
+    }
+}
+
+7.Año Bisiesto
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese un año: ");
+        int anio = sc.nextInt();
+
+        if ((anio % 4 == 0 && anio % 100 != 0) || anio % 400 == 0) {
+            System.out.println("El año es bisiesto");
+        } else {
+            System.out.println("El año no es bisiesto");
+        }
+    }
+}
+
+8.Prioridad en Fila
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese su nombre: ");
+        String nombre = sc.next();
+
+        System.out.print("Ingrese su edad: ");
+        int edad = sc.nextInt();
+
+        if (edad >= 70) {
+            System.out.println(nombre + " tiene prioridad en la fila");
+        } else {
+            System.out.println(nombre + " no tiene prioridad en la fila");
+        }
+    }
+}
+
+9.Mayor de Tres Numeros
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese el primer número: ");
+        int a = sc.nextInt();
+
+        System.out.print("Ingrese el segundo número: ");
+        int b = sc.nextInt();
+
+        System.out.print("Ingrese el tercer número: ");
+        int c = sc.nextInt();
+
+        int mayor = a;
+
+        if (b > mayor) mayor = b;
+        if (c > mayor) mayor = c;
+
+        System.out.println("El número mayor es: " + mayor);
+    }
+}
+
+10.Tipos de Triangulo
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese el primer lado: ");
+        int a = sc.nextInt();
+
+        System.out.print("Ingrese el segundo lado: ");
+        int b = sc.nextInt();
+
+        System.out.print("Ingrese el tercer lado: ");
+        int c = sc.nextInt();
+
+        if (a == b && b == c) {
+            System.out.println("El triángulo es equilátero");
+        } else if (a == b || a == c || b == c) {
+            System.out.println("El triángulo es isósceles");
+        } else {
+            System.out.println("El triángulo es escaleno");
+        }
+    }
+}
+
+11. IMC
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese su nombre: ");
+        String nombre = sc.next();
+
+        System.out.print("Ingrese su peso en kg: ");
+        double peso = sc.nextDouble();
+
+        System.out.print("Ingrese su altura en metros: ");
+        double altura = sc.nextDouble();
+
+        double imc = peso / (altura * altura);
+
+        if (imc < 18.5) {
+            System.out.println(nombre + ", su IMC indica bajo peso");
+        } else if (imc < 25) {
+            System.out.println(nombre + ", su IMC es normal");
+        } else if (imc < 30) {
+            System.out.println(nombre + ", su IMC indica sobrepeso");
+        } else {
+            System.out.println(nombre + ", su IMC indica obesidad");
+        }
+    }
+}
+
+12. Calculadora Simple
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese el primer número: ");
+        double a = sc.nextDouble();
+
+        System.out.print("Ingrese el segundo número: ");
+        double b = sc.nextDouble();
+
+        System.out.print("Ingrese la operación (+ - * /): ");
+        char op = sc.next().charAt(0);
+
+        if (op == '+') System.out.println("Resultado: " + (a + b));
+        else if (op == '-') System.out.println("Resultado: " + (a - b));
+        else if (op == '*') System.out.println("Resultado: " + (a * b));
+        else if (op == '/') System.out.println("Resultado: " + (a / b));
+    }
+}
+
+13. Nota en Letra
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese la nota final: ");
+        int nota = sc.nextInt();
+
+        if (nota >= 90) System.out.println("Calificación: A");
+        else if (nota >= 80) System.out.println("Calificación: B");
+        else if (nota >= 70) System.out.println("Calificación: C");
+        else if (nota >= 60) System.out.println("Calificación: D");
+        else System.out.println("Calificación: F");
+    }
+}
+
+14.Dias de la Semana segun Numeros
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese un número del 1 al 7: ");
+        int d = sc.nextInt();
+
+        if (d == 1) System.out.println("Lunes");
+        else if (d == 2) System.out.println("Martes");
+        else if (d == 3) System.out.println("Miércoles");
+        else if (d == 4) System.out.println("Jueves");
+        else if (d == 5) System.out.println("Viernes");
+        else if (d == 6) System.out.println("Sábado");
+        else if (d == 7) System.out.println("Domingo");
+    }
+}
+
+15. Formar Triangulo
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingrese el primer lado: ");
+        int a = sc.nextInt();
+
+        System.out.print("Ingrese el segundo lado: ");
+        int b = sc.nextInt();
+
+        System.out.print("Ingrese el tercer lado: ");
+        int c = sc.nextInt();
+
+        if (a + b > c && a + c > b && b + c > a) {
+            if (a == b && b == c) {
+                System.out.println("El triángulo es equilátero");
+            } else if (a == b || a == c || b == c) {
+                System.out.println("El triángulo es isósceles");
+            } else {
+                System.out.println("El triángulo es escaleno");
+            }
+        } else {
+            System.out.println("Los valores no forman un triángulo");
+        }
+    }
+}
